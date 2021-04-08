@@ -17,4 +17,6 @@ Bugs were occuring when the window was resized and some elements would overlap o
 Add to cart feature now updates properly, and user can even add multiple of the same item unlike in 6A. 
 Cart page is now actually functional instead of a placeholder like in 6A.  
 
+#### "-2 Did not submit link to site using GitPages" ####
+https://r1g.github.io/rdeshpan_pui_6b/ :)
 
