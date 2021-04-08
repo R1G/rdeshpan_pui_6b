@@ -1,0 +1,80 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Muddy Paws Adventure Gear</title>
+    <meta name="author" content="Rigved Deshpande">
+
+    <link rel="stylesheet" href="styles.css">
+    </script>
+
+  </head>
+
+  <body>
+    <!-- logo -->
+    <a href="index.html" class="logo" id="small-logo">
+      <h1>Muddy Paws</h1>
+      <h2>Adventure Gear</h2>
+    </a>
+    <br>
+
+    <!-- products display grid -->
+    <div class="products">
+
+      <div class="column">
+        <div class="product-box" data-product-name="Dog_Harness">
+          <h2  data-product-name="Dog_Harness">Dog Harness</h2>
+          <img class="product-image" src="Images/Dog_Harness.jpg" alt="dog wearing dog harness"  data-product-name="Dog_Harness"/>
+        </div>
+
+        <div class="product-box" data-product-name="Water_Storage">
+          <h2 data-product-name="Water_Storage">Water Storage</h2>
+          <img class="product-image" src="Images/Water_Storage.jpg" alt="pouch for water storage" data-product-name="Water_Storage"/>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="product-box" data-product-name="Cat_Harness">
+          <h2 data-product-name="Cat_Harness">Cat Harness</h2>
+          <img class="product-image" src="Images/Cat_Harness.jpg" alt="cat wearing cat harness" data-product-name="Cat_Harness"/>
+        </div>
+
+        <div class="product-box" data-product-name="GPS_Tracker">
+          <h2 data-product-name="GPS_Tracker">GPS Tracker</h2>
+          <img class="product-image" src="Images/GPS_Tracker.jpg" alt="gps tracker and phone" data-product-name="GPS_Tracker"/>
+        </div>
+      </div>
+
+
+      <div class="column">
+        <div class="product-box" data-product-name="Food_Storage">
+          <h2 data-product-name="Food_Storage">Food Storage</h2>
+          <img class="product-image" src="Images/Food_Storage.jpg" alt="pouches to store food in" data-product-name="Food_Storage"/>
+        </div>
+
+        <div class="product-box" data-product-name="Cat_Backpack">
+          <h2 data-product-name="Cat_Backpack">Cat Backpack</h2>
+          <img class="product-image" src="Images/Cat_Backpack.jpg" alt="cat next to cat backpack" data-product-name="Cat_Backpack"/>
+        </div>
+      </div>
+    </div>
+
+    <script>
+
+      (function() {
+        const productsContainer = document.querySelector('.products');
+        productsContainer.addEventListener('click', function(event) {
+          var productName = event.target.getAttribute('data-product-name');
+          localStorage.setItem('selectedProduct', productName);
+          console.log(productName);
+          window.location.href = "purchase.html"
+        });
+      }());
+
+    </script>
+    
+  </body>
+</html>
